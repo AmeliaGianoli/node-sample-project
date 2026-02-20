@@ -1,6 +1,7 @@
 // imports:
 const express = require('express');
 const app = express();
+const bodyParser = require('body-parser');
 
 // MIDDLEWARE
 // this is a spot for features/functionality
@@ -10,6 +11,9 @@ app.use(express.static('public'));
 
 // Specify that we are using 'ejs' templates in our app:
 app.set('view engine', 'ejs');
+
+// allows collection of data submitted in HTML forms:
+app.use(bodyParser.urlencoded({extended:true}));
 
 
 // ROUTES
@@ -38,6 +42,11 @@ app.get('/signup', (req, res) => {
   res.render('signup-layout', {
     title: "Sign Up"
   });
+});
+
+// signup confirmation:
+app.post('/signup-confirmation', (req, res) => {
+  res.send("Form data received: " + JSON.stringify(req.body));
 });
 
 // start the server:
