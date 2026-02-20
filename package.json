@@ -9,5 +9,18 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs"
+  "type": "commonjs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AmeliaGianoli/node-sample-project.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AmeliaGianoli/node-sample-project/issues"
+  },
+  "homepage": "https://github.com/AmeliaGianoli/node-sample-project#readme",
+  "dependencies": {
+    "gray-matter": "^4.0.3",
+    "grey-matter": "^0.0.0",
+    "markdown-it": "^14.1.1"
+  }
 }
