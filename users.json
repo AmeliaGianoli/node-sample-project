@@ -1,0 +1,20 @@
+[
+  {
+    "firstName": "Bob",
+    "lastName": "Smith",
+    "email": "bob@smith.com",
+    "password": "test123"
+  },
+  {
+    "firstName": "Betty",
+    "lastName": "Jones",
+    "email": "betty@jones.com",
+    "password": "opensesame"
+  },
+  {
+    "firstName": "Amelia",
+    "lastName": "Gianoli",
+    "email": "ameliagianoli2017@gmail.com",
+    "password": "foo"
+  }
+]
