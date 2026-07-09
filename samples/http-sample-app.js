@@ -36,6 +36,17 @@ const parseRequest = (req) => {
 
 }
 
+app.get('/form', (req, res) => {
+  res.send(
+    `<form action="/request-handler" >
+      <label>First Name</label>
+      <input name="firstName" />
+      <label>Last Name</label>
+      <input name="LastName" />
+      <input type='submit' />
+    </form>`)
+})
+
 // START THE SERVER
 const port = 8080; // We'll run the server on port 8080
 const server = app.listen(port, () => {

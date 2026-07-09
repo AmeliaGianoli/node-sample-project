@@ -11,16 +11,16 @@ A score lower than 60 should return "F"
 @return {string}            The letter grade for the score
 */
 
-function calculateLetterGrade(score){
-    if(score >= 90){
+function calculateLetterGrade(score) {
+    if (score >= 90) {
         return "A";
-    }else if(score >= 80){
+    } else if (score >= 80) {
         return "B";
-    }else if(score > 70){
+    } else if (score >= 70) {
         return "C";
-    }else if(score > 60){
+    } else if (score >= 60) {
         return "D"
-    }else{
+    } else {
         return "F"
     }
 }
@@ -33,10 +33,10 @@ Takes an array of test scores (numbers) and returns the average for them.
 
 @return {number}                  The average of the scores
 */
-function calculateAverageScore(scores){
-  let total = 0;
-  scores.forEach(s => total += s);
-  return total/scores.length;
+function calculateAverageScore(scores) {
+    let total = 0;
+    scores.forEach(s => total += s);
+    return total / scores.length;
 }
 
 exports.calculateLetterGrade = calculateLetterGrade
