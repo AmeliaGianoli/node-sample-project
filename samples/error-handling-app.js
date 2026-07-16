@@ -15,7 +15,7 @@ app.use((error, req, res, next) => {
   console.log("Error!");
   console.log(req.path);
   console.log(error);
-  res.status(500).send("An error occurred, please try again later")
+  res.status(400).send("An error occurred, please try again later")
 })
 
 
